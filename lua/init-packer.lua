@@ -1,0 +1,91 @@
+-- entry point for packer.nvim 
+return require('packer').startup(function(use)
+ 
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+
+  -- lsp config
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+
+  -- color scheme
+  use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    config = function()
+        vim.cmd('colorscheme rose-pine')
+    end
+})
+
+  -- comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
+
+-- tree
+  use {
+  'kyazdani42/nvim-tree.lua',
+  requires = {
+	  -- icons can only be displayed correctly if nerd fonts are installed: https://www.nerdfonts.com/
+    'kyazdani42/nvim-web-devicons', -- optional, for file icons
+  },
+  tag = 'nightly', -- optional, updated every week. (see issue #1193)
+  config = function()
+	  require('nvim-tree').setup()
+  end
+}
+
+-- using packer.nvim
+  use {
+	  'akinsho/bufferline.nvim', 
+	  tag = "v2.*", 
+	  requires = 'kyazdani42/nvim-web-devicons',
+  	  config = function()
+	  	require'bufferline'.setup{}
+        	end
+}
+
+-- status bar
+  use {
+	  'windwp/windline.nvim',
+	  config = function()
+		  require('wlsample.vscode').setup()
+	  end
+  }
+
+-- autopair
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
+
+-- blankline
+  use {
+	  "lukas-reineke/indent-blankline.nvim",
+	  config = function()
+		  require('indent_blankline').setup {
+			  show_current_context = true,
+			  show_current_context_start = true,
+		  }
+	  end
+	}
+
+-- treesitter
+  use {
+	  "nvim-treesitter/nvim-treesitter"
+  }
+
+-- telescope
+  use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+-- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+
+end)
