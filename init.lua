@@ -1,3 +1,5 @@
+-- neovim version= 0.8.0
+
 -- [[use packer.nvim to manage all plugins,https://github.com/wbthomason/packer.nvim
 -- all plugins are installed at default search path: ~/.local/share/nvim/site/pack/...
 -- use :h packages to find more information about neovim packages.
@@ -11,9 +13,14 @@ require('init-lsp')
 -- load treesitter
 require('init-treesitter')
 
+-- keybindings
+require('keybindings')
+
 -- custom configurations
 vim.o.number = true
 vim.o.smartindent = true
 vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.timeoutlen = 1000
+vim.o.mapleader = ' '
+vim.o.maplocalleader = ' '
