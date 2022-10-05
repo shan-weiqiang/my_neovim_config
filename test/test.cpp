@@ -10,13 +10,12 @@ void myfunc() { f4(); }
 
 int main() { myfunc(); }
 
-class myclass{
-	public:
-	void public_f(){
-		std::cout << "this is a public func\n";
-	}
+class myclass {
+public:
+  void public_f() { std::cout << "this is a public func\n"; }
 
-	private:
-
-	std::vector<double> mytable = {12,34,54};
+private:
+  std::vector<double> mytable = {12, 34, 54};
 };
+
+struct newstruct {};
