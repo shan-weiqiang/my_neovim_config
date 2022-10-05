@@ -4,7 +4,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- lsp config
+  -- lsp config: provide easy interface to vim core implementation
+	-- language server and functions such as auto completion need to be provided seperately
+	-- this module is used by thes modules
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
@@ -87,5 +89,20 @@ return require('packer').startup(function(use)
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+
+-- formatter
+use {
+		"sbdchd/neoformat"
+	}
+
+-- symbols-outline view
+use {
+	'simrat39/symbols-outline.nvim',
+	config = function()
+		require('symbols-outline').setup()
+		end
+	}
+
+
 
 end)

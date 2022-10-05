@@ -1,13 +1,22 @@
 #include <iostream>
 #include <vector>
-void myfunc(){
-}
 
-void hisfunc(){
-	std::vector<int> a = {1,2,3};
-	std::cout << "hello" << std::endl;	
-}
+void f1() {}
+void f2() { f1(); }
+void f3() { f2(); }
+void f4() { f3(); }
 
-int main(){
-	
-}
+void myfunc() { f4(); }
+
+int main() { myfunc(); }
+
+class myclass{
+	public:
+	void public_f(){
+		std::cout << "this is a public func\n";
+	}
+
+	private:
+
+	std::vector<double> mytable = {12,34,54};
+};

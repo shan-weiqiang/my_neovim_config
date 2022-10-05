@@ -18,5 +18,10 @@ require'nvim-treesitter.configs'.setup {
   },
    indent = {
     enable = true
-  }
+  },
+	ensure_installed = {
+		"c", "lua", "cpp", "python", "json", "yaml"
+	},
+
+	auto_install = true,
 }
