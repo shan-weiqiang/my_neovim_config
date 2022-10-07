@@ -1,4 +1,4 @@
--- entry point for packer.nvim
+	-- entry point for packer.nvim
 return require('packer').startup(function(use)
 
 	-- Packer can manage itself
@@ -35,6 +35,8 @@ return require('packer').startup(function(use)
 		'kyazdani42/nvim-tree.lua',
 		requires = {
 			-- icons can only be displayed correctly if nerd fonts are installed: https://www.nerdfonts.com/
+			-- only one patched(icons included) font is needed, such as Hack
+			-- to correctly display the font, the terminal also needs to be configured to use the nerd fond, in the Preference settings
 			'kyazdani42/nvim-web-devicons', -- optional, for file icons
 		},
 		tag = 'nightly', -- optional, updated every week. (see issue #1193)

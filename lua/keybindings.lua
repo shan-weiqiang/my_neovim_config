@@ -29,6 +29,7 @@ map("n", "<leader>l", ":BufferLineCycleNext<CR>", opt)
 map("n", "<leader>f", ":Telescope find_files<CR>", opt)
 map("n", "<leader>g", ":Telescope live_grep<CR>", opt)
 map("n", "<leader>s", ":Telescope lsp_document_symbols<CR>", opt)
+map("n", "<leader>r", ":Telescope oldfiles<CR>", opt)
 
 
 -- alt + hjkl to jump between windows instead of ctrl+w
