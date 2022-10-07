@@ -18,7 +18,7 @@ require('keybindings')
 -- following line is the initialization of packer.nvim, which automatically loads all other plugins.]]
 require('init-packer')
 
--- load lsp-config 
+-- load lsp-config
 require('init-lsp')
 
 -- load treesitter
