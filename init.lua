@@ -23,6 +23,3 @@ require('init-lsp')
 
 -- load treesitter
 require('init-treesitter')
-
-
-

@@ -54,12 +54,19 @@ return require('packer').startup(function(use)
 }
 
 -- status bar
+  -- use {
+	 --  'windwp/windline.nvim',
+	 --  config = function()
+		--   require('wlsample.vscode').setup()
+	 --  end
+  -- }
   use {
-	  'windwp/windline.nvim',
-	  config = function()
-		  require('wlsample.vscode').setup()
-	  end
-  }
+	  'nvim-lualine/lualine.nvim',
+	  requires = { 'kyazdani42/nvim-web-devicons', opt = true };
+		config = function()
+		require('lualine').setup()
+		end
+	}
 
 -- autopair
   use {

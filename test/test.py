@@ -7,9 +7,10 @@ class myclass:
 class otherclass:
     def __init__(self) -> None:
         pass
-    
+
     def some_function(self):
         print('some function')
+
 
 if __name__ == '__main__':
     """Shan Weiqiang:

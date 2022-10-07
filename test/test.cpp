@@ -19,3 +19,5 @@ private:
 };
 
 struct newstruct {};
+
+struct anotherstruct {};
