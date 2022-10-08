@@ -1,4 +1,4 @@
-	-- entry point for packer.nvim
+-- entry point for packer.nvim
 return require('packer').startup(function(use)
 
 	-- Packer can manage itself
@@ -122,5 +122,11 @@ return require('packer').startup(function(use)
 		end
 	}
 
+	-- toggleterm
+	use { "akinsho/toggleterm.nvim", tag = '*' }
 
+
+
+	-- debugger
+	use "mfussenegger/nvim-dap"
 end)

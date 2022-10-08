@@ -23,3 +23,6 @@ require('init-lsp')
 
 -- load treesitter
 require('init-treesitter')
+
+-- load toggleterm
+require('init-toggleterm')
