@@ -10,6 +10,14 @@ class otherclass:
 
     def some_function(self):
         print('some function')
+        b = 8
+        a = b + 29
+        li = ['hello', 'nihao ']
+        di = {'key1':1, "key2": 3}
+        print('hello' + 3)
+        print(li)
+        print(di)
+        print(a)
 
 
 if __name__ == '__main__':
