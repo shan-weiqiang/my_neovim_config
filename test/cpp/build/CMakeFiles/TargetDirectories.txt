@@ -1,0 +1,4 @@
+/home/osboxes/.config/nvim/test/cpp/build/CMakeFiles/app.dir
+/home/osboxes/.config/nvim/test/cpp/build/CMakeFiles/math.dir
+/home/osboxes/.config/nvim/test/cpp/build/CMakeFiles/edit_cache.dir
+/home/osboxes/.config/nvim/test/cpp/build/CMakeFiles/rebuild_cache.dir

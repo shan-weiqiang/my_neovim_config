@@ -1,3 +1,0 @@
-/home/osboxes/.config/nvim/test/build/CMakeFiles/app.dir
-/home/osboxes/.config/nvim/test/build/CMakeFiles/edit_cache.dir
-/home/osboxes/.config/nvim/test/build/CMakeFiles/rebuild_cache.dir
