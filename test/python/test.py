@@ -1,5 +1,6 @@
 from somem import p
 
+
 class myclass:
     def __init__(self) -> None:
         # pass
@@ -15,7 +16,7 @@ class otherclass:
         b = 8
         a = b + 29
         li = ['hello', 'nihao ']
-        di = {'key1':1, "key2": 3}
+        di = {'key1': 1, "key2": 3}
         print(li)
         print(di)
         print(a)

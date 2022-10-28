@@ -33,10 +33,10 @@ map("n", "<leader>r", ":Telescope oldfiles<CR>", opt)
 
 
 -- alt + hjkl to jump between windows instead of ctrl+w
-map("n", "<A-h>", "<C-w>h", opt)
-map("n", "<A-j>", "<C-w>j", opt)
-map("n", "<A-k>", "<C-w>k", opt)
-map("n", "<A-;>", "<C-w>l", opt)
+map("n", "<C-h>", "<C-w>h", opt)
+map("n", "<C-j>", "<C-w>j", opt)
+map("n", "<C-k>", "<C-w>k", opt)
+map("n", "<C-l>", "<C-w>l", opt)
 
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
