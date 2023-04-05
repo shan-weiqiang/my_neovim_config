@@ -48,7 +48,7 @@ map("n", "<leader>w", ":w<CR>", opt)
 map("n", "<leader>wq", ":wq<CR>", opt)
 
 -- space + q: quit
-map("n", "<leader>q", ":q!<CR>", opt)
+-- map("n", "<leader>q", ":q!<CR>", opt)
 
 -- outline
 keymap("n", "<leader>o", ":SymbolsOutline<cr>", opts)

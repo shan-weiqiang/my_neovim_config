@@ -21,6 +21,11 @@ return require('packer').startup(function(use)
 			vim.cmd('colorscheme rose-pine')
 		end
 	})
+	use ({'folke/tokyonight.nvim',
+		config = function()
+			vim.cmd[[colorscheme tokyonight]]
+		end})
+
 
 	-- comment
 	use {
