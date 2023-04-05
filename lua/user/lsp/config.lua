@@ -19,14 +19,4 @@ require('lspconfig')['cmake'].setup {
 	capabilities = capabilities
 }
 
--- lua language server installation guide:
--- 1. first downloads the binary folder: https://github.com/sumneko/lua-language-server/releases
--- 2. create a bash script file named 'lua-language-server', with following content:
--- #!/bin/bash
--- script_dir=$(cd $(dirname $0);pwd)
--- exec "${script_dir}/bin/lua-language-server" "$@"
--- 3. add the script file as binary to PATH variable
-require 'lspconfig'.sumneko_lua.setup {
-	capabilities = capabilities
-}
 
