@@ -14,133 +14,48 @@ return require('packer').startup(function(use)
 	use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
 	-- color scheme
-	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
-		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
-	})
-	use ({'folke/tokyonight.nvim',
-		config = function()
-			vim.cmd[[colorscheme tokyonight]]
-		end})
+	use 'folke/tokyonight.nvim'
 
 
 	-- comment
-	use {
-		'numToStr/Comment.nvim',
-		config = function()
-			require('Comment').setup()
-		end
-	}
+	use 'numToStr/Comment.nvim'
 
-	-- tree
-	use {
-		'kyazdani42/nvim-tree.lua',
-		requires = {
-			-- icons can only be displayed correctly if nerd fonts are installed: https://www.nerdfonts.com/
-			-- only one patched(icons included) font is needed, such as Hack
-			-- to correctly display the font, the terminal also needs to be configured to use the nerd fond, in the Preference settings
-			'kyazdani42/nvim-web-devicons', -- optional, for file icons
-		},
-		tag = 'nightly', -- optional, updated every week. (see issue #1193)
-		config = function()
-			require('nvim-tree').setup()
-		end
-	}
+	-- icons can only be displayed correctly if nerd fonts are installed: https://www.nerdfonts.com/
+	-- only one patched(icons included) font is needed, such as Hack
+	-- to correctly display the font, the terminal also needs to be configured to use the nerd fond, in the Preference settings
+	use {'kyazdani42/nvim-tree.lua', requires = {'kyazdani42/nvim-web-devicons'}}
 
-	-- using packer.nvim
-	use {
-		'akinsho/bufferline.nvim',
-		tag = "v2.*",
-		requires = 'kyazdani42/nvim-web-devicons',
-		config = function()
-			require 'bufferline'.setup {
-				options={
+	-- bufferline tab
+	use {'akinsho/bufferline.nvim',tag = "v2.*",requires = 'kyazdani42/nvim-web-devicons'}
 
-				 offsets = {{
-           					 filetype = "NvimTree",
-            					 text = "File Explorer",
-            					 highlight = "Directory",
-            					 text_align = "left"
-        }}
-				}
-			}
-		end
-	}
 
 	-- status bar
-	-- use {
-	--  'windwp/windline.nvim',
-	--  config = function()
-	--   require('wlsample.vscode').setup()
-	--  end
-	-- }
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true };
-		config = function()
-			require('lualine').setup()
-		end
-	}
+	use {'nvim-lualine/lualine.nvim',requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
 
 	-- autopair
-	use {
-		"windwp/nvim-autopairs",
-		config = function() require("nvim-autopairs").setup {} end
-	}
+	use {"windwp/nvim-autopairs"}
 
 	-- blankline
-	use {
-		"lukas-reineke/indent-blankline.nvim",
-		config = function()
-			require('indent_blankline').setup {
-				show_current_context = true,
-				show_current_context_start = true,
-			}
-		end
-	}
+	use {"lukas-reineke/indent-blankline.nvim"}
 
 	-- treesitter
-	use {
-		"nvim-treesitter/nvim-treesitter"
-	}
+	use {"nvim-treesitter/nvim-treesitter"}
 
 	-- telescope
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
-		-- or                            , branch = '0.1.x',
-		requires = { { 'nvim-lua/plenary.nvim' } }
-	}
+	use {'nvim-telescope/telescope.nvim', tag = '0.1.0',	requires = { { 'nvim-lua/plenary.nvim' } }}
 
 	-- formatter
-	use {
-		"sbdchd/neoformat"
-	}
+	use {"sbdchd/neoformat"}
 
 	-- symbols-outline view
-	use {
-		'simrat39/symbols-outline.nvim',
-		config = function()
-			require('symbols-outline').setup()
-		end
-	}
+	use {'simrat39/symbols-outline.nvim'}
 
 
 	-- gitsigns
-	use {
-		'lewis6991/gitsigns.nvim',
-		-- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
-		config = function()
-			require('gitsigns').setup()
-		end
-	}
+	use {'lewis6991/gitsigns.nvim'}
 
 	-- toggleterm
 	use { "akinsho/toggleterm.nvim", tag = '*' }
-
-
 
 	-- debugger
 	use "mfussenegger/nvim-dap"

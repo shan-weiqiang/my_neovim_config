@@ -1,7 +1,15 @@
 -- neovim version= 0.8.0
 
--- general settings
-require('user.general')
+vim.o.number = true
+vim.o.smartindent = true
+vim.o.termguicolors = true
+vim.o.cursorline = true
+vim.o.timeoutlen = 1000
+vim.opt.termguicolors = true
+vim.wo.relativenumber=true
+require('Comment').setup()
+
+require('nvim-tree-setup')
 
 -- keybindings
 require('user.keybindings')
@@ -18,10 +26,17 @@ require('packer-plugins')
 require('user.lsp')
 
 -- treesitter
-require('treesitter')
+require('treesitter-setup')
 
 -- toggleterm
-require('init-toggleterm')
+require('toggleterm-setup')
 
 -- debugging
 require('user.dap')
+require 'autopairs-setup'
+require 'blankline-setup'
+require 'gitsigns-setup'
+require 'lualine-setup'
+require 'symbols-outline-setup'
+
+vim.cmd[[colorscheme tokyonight]]
