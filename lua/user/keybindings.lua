@@ -32,11 +32,13 @@ map("n", "<leader>s", ":Telescope lsp_document_symbols<CR>", opt)
 map("n", "<leader>r", ":Telescope oldfiles<CR>", opt)
 
 
--- alt + hjkl to jump between windows instead of ctrl+w
+-- ctrl+h/j to jump between windows instead of ctrl+w
 map("n", "<C-h>", "<C-w>h", opt)
-map("n", "<C-j>", "<C-w>j", opt)
-map("n", "<C-k>", "<C-w>k", opt)
 map("n", "<C-l>", "<C-w>l", opt)
+
+-- ctrl+j/k to move 5 lines up and down, for quick scrolling
+map("n", "<C-j>", ":+5<CR>", opt)
+map("n", "<C-k>", ":-5<CR>", opt)
 
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
