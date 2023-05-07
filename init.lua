@@ -47,5 +47,6 @@ require 'blankline-setup'
 require 'gitsigns-setup'
 require 'lualine-setup'
 require 'symbols-outline-setup'
+require 'bufferline-setup'
 
 vim.cmd[[colorscheme tokyonight]]
