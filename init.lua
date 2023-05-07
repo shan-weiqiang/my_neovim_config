@@ -49,4 +49,4 @@ require 'lualine-setup'
 require 'symbols-outline-setup'
 require 'bufferline-setup'
 
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme tokyonight-night]]

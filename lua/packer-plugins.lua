@@ -23,14 +23,14 @@ return require('packer').startup(function(use)
 	-- icons can only be displayed correctly if nerd fonts are installed: https://www.nerdfonts.com/
 	-- only one patched(icons included) font is needed, such as Hack
 	-- to correctly display the font, the terminal also needs to be configured to use the nerd fond, in the Preference settings
-	use {'kyazdani42/nvim-tree.lua', requires = {'kyazdani42/nvim-web-devicons'}}
+	use {'kyazdani42/nvim-tree.lua', requires = {'nvim-tree/nvim-web-devicons'}}
 
 	-- bufferline tab
-	use {'akinsho/bufferline.nvim',tag = "v2.*",requires = 'kyazdani42/nvim-web-devicons'}
+	use {'akinsho/bufferline.nvim',tag = "*",requires = 'nvim-tree/nvim-web-devicons'}
 
 
 	-- status bar
-	use {'nvim-lualine/lualine.nvim',requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+	use {'nvim-lualine/lualine.nvim',requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
 
 	-- autopair
 	use {"windwp/nvim-autopairs"}
