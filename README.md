@@ -1,5 +1,5 @@
 Neovim configuration fo neovim in macbook/wsl2
-
+[TOC]
 # Preparations
 
 - Install packer-nvim
@@ -15,7 +15,23 @@ The first step is to install `packer-nvim`
 - Start nvim, run `PackerSync`
 
 # Usage
-- Default key mappings
+- Default key mappings, the leader key is space
 	- ctrl+]: go to definition
 	- ctrl+o: go back to before cursor
+    - ctrl+u/n: nivagate between tab
+    - ctrl+h/l: navigate between window
+    - ctrl+j/k: scroll per 5 lines instead of 1 line
+    - leader+e: open file explorer
+    - leader+f: open find file
+    - leader+g: open live grep
+    - leader+c: opend command line input
     - others see `keybindings.lua`
+
+# Environment
+
+## Windows WSL2
+
+- Terminal: Windows Terminal
+    - Font: IosevkaNerdFontMono
+    - Color Schemes: One Half Dark
+    - Mode: Focus Mode
