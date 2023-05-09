@@ -35,3 +35,7 @@ The first step is to install `packer-nvim`
     - Font: IosevkaNerdFontMono
     - Color Schemes: One Half Dark
     - Mode: Focus Mode
+
+## Tips
+
+- In vim tree window, `I` to toggle to respect `.gitignore` or not
