@@ -17,11 +17,22 @@ function map(mode, lhs, rhs, opts)
 	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- resize window
+map("n", "<C-o>", ":vertical res +5<CR>", opt)
+map("n", "<C-p>", ":vertical res -5<CR>", opt)
+map("n", "<C-u>", ":res +5<CR>", opt)
+map("n", "<C-i>", ":res -5<CR>", opt)
+
+-- Git
+map("n", "<leader>dt",":G difftool", opt )
+map("n", "<leader>df",":Gvdiffsplit", opt )
+map("n", "<leader>gs",":Git", opt )
+
 -- nvimtree, space + e = open & close nvim tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右切换
-map("n", "<C-u>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<C-y>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-n>", ":BufferLineCycleNext<CR>", opt)
 
 -- telescope: space + f open find_files; space + g open live_grep
