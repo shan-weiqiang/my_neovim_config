@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 
 	-- color scheme
 	use 'folke/tokyonight.nvim'
+	use "rebelot/kanagawa.nvim"
 
 
 	-- comment
