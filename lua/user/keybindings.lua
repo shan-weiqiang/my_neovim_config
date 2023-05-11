@@ -32,8 +32,8 @@ map("n", "<leader>gs",":Git<CR>", opt )
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右切换
-map("n", "<C-y>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-n>", ":BufferLineCycleNext<CR>", opt)
+-- map("n", "<C-y>", ":BufferLineCyclePrev<CR>", opt)
+-- map("n", "<C-n>", ":BufferLineCycleNext<CR>", opt)
 
 -- telescope: space + f open find_files; space + g open live_grep
 -- for live_grep to work, sudo apt install ripgrep
@@ -46,10 +46,12 @@ map("n", "<leader>r", ":Telescope oldfiles<CR>", opt)
 -- ctrl+h/j to jump between windows instead of ctrl+w
 map("n", "<C-h>", "<C-w>h", opt)
 map("n", "<C-l>", "<C-w>l", opt)
+map("n", "<C-j>", "<C-w>j", opt)
+map("n", "<C-k>", "<C-w>k", opt)
 
 -- ctrl+j/k to move 5 lines up and down, for quick scrolling
-map("n", "<C-j>", ":+5<CR>", opt)
-map("n", "<C-k>", ":-5<CR>", opt)
+map("n", "<C-n>", ":+5<CR>", opt)
+map("n", "<C-y>", ":-5<CR>", opt)
 
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
