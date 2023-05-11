@@ -16,7 +16,7 @@ The first step is to install `packer-nvim`
 
 # Usage
 - Default key mappings, the leader key is space
-	- ctrl+]: go to definition
+	- ctrl+]: go to definition/in nvim tree, enter folder
 	- ctrl+o: go back to before cursor
     - ctrl+u/n: nivagate between tab
     - ctrl+h/l: navigate between window
