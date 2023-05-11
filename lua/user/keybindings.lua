@@ -26,7 +26,7 @@ map("n", "<C-i>", ":res -5<CR>", opt)
 -- Git
 map("n", "<leader>dt",":G difftool", opt )
 map("n", "<leader>df",":Gvdiffsplit", opt )
-map("n", "<leader>gs",":Git", opt )
+map("n", "<leader>gs",":Git<CR>", opt )
 
 -- nvimtree, space + e = open & close nvim tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opt)

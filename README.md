@@ -21,10 +21,16 @@ The first step is to install `packer-nvim`
     - ctrl+u/n: nivagate between tab
     - ctrl+h/l: navigate between window
     - ctrl+j/k: scroll per 5 lines instead of 1 line
+    - ctrl+\: toggle terminal
+    - ctr+u/i:adjust window vertically
+    - ctrl+o/p: adjust window horizontally
     - leader+e: open file explorer
     - leader+f: open find file
     - leader+g: open live grep
     - leader+c: opend command line input
+    - leader+dt: open Git difftool
+    - leader+gs: open Git
+    - leader+df: open Gitvsplit
     - others see `keybindings.lua`
 
 # Environment
