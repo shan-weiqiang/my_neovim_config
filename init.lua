@@ -7,7 +7,8 @@ vim.o.cursorline = true
 vim.o.timeoutlen = 1000
 vim.opt.termguicolors = true
 vim.wo.relativenumber=true
-
+-- show parenthensis match
+vim.opt.showmatch = true
 vim.diagnostic.config({
   virtual_text = false
 })
@@ -15,6 +16,7 @@ vim.diagnostic.config({
 -- Show line diagnostics automatically in hover window
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+
 
 require('Comment').setup()
 
@@ -50,3 +52,19 @@ require 'symbols-outline-setup'
 require 'bufferline-setup'
 
 vim.cmd[[colorscheme kanagawa]]
+
+-- set back ground color
+vim.cmd([[
+  set background=dark
+  highlight Normal ctermbg=black guibg=#1F1F1F
+  highlight LineNr guibg=#1F1F1F
+  highlight SignColumn guibg=#1F1F1F 
+  highlight DiagnosticSignError guibg=#1F1F1F
+  highlight DiagnosticSignWarn guibg=#1F1F1F
+  highlight DiagnosticSignHint guibg=#1F1F1F
+  highlight DiagnosticSignInfo guibg=#1F1F1F
+  highlight GitSignsAdd guibg=NONE
+  highlight GitSignsDelete guibg=NONE
+  highlight GitSignsChange guibg=NONE
+  highlight Directory guifg=NONE
+  ]])
