@@ -13,7 +13,7 @@ highlight @text.reference guifg=#9CDCFE
 highlight Statement guifg=#C586C0
 highlight Constant guifg=#4FC1FF
 highlight DiagnosticHint guifg=#4EC9B0
-
+highlight @funtion.builtin ctermfg=222 guifg=#DCDCAA
 
 
 
