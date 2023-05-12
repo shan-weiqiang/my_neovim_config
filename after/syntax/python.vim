@@ -11,6 +11,8 @@ highlight @variable guifg=#9CDCFE
 highlight @text.literal guifg=#CE9178
 highlight @text.reference guifg=#9CDCFE
 highlight Statement guifg=#C586C0
+syn keyword pythonType type
+
 
 
 
