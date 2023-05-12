@@ -18,8 +18,8 @@ function map(mode, lhs, rhs, opts)
 end
 
 -- resize window
-map("n", "<C-o>", ":vertical res +5<CR>", opt)
-map("n", "<C-p>", ":vertical res -5<CR>", opt)
+map("n", "<C-p>", ":vertical res +5<CR>", opt)
+map("n", "<C-[>", ":vertical res -5<CR>", opt)
 map("n", "<C-i>", ":res +5<CR>", opt)
 map("n", "<C-u>", ":res -5<CR>", opt)
 
