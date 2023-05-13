@@ -1,6 +1,8 @@
 #include "math/math.h"
 #include <iostream>
 #include <vector>
+#define SOME_CONSTN 1;
+using namespace std;
 namespace mynamespace {
 void f1() {
   double b = 8;
@@ -15,5 +17,10 @@ void f4() { f3(); }
 
 void myfunc() { f4(); }
 } // namespace mynamespace
+
+class Myclass{
+
+  static double d;
+};
 
 int main() { mynamespace::myfunc(); }

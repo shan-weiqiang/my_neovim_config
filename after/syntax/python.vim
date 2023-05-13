@@ -14,4 +14,3 @@ highlight Statement guifg=#C586C0
 highlight Constant guifg=#4FC1FF
 highlight DiagnosticHint guifg=#4EC9B0
 highlight @function.builtin ctermfg=222 guifg=#DCDCAA
-highlight Special guifg=#9CDCFE

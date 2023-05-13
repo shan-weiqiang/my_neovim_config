@@ -1,6 +1,6 @@
 from somem import p
 
-
+SOME_CONST = "HELLOWORLD"
 class myclass:
     def __init__(self) -> None:
         # pass
