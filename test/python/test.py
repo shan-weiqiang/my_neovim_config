@@ -20,6 +20,7 @@ class otherclass:
         print(li)
         print(di)
         print(a)
+        return
 
 
 if __name__ == '__main__':

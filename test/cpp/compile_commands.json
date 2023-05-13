@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/swq/.config/nvim/test/cpp/build",
+  "command": "/usr/bin/c++   -I/home/swq/.config/nvim/test/cpp/inc  -g   -o CMakeFiles/math.dir/src/math/math.cpp.o -c /home/swq/.config/nvim/test/cpp/src/math/math.cpp",
+  "file": "/home/swq/.config/nvim/test/cpp/src/math/math.cpp"
+},
+{
+  "directory": "/home/swq/.config/nvim/test/cpp/build",
+  "command": "/usr/bin/c++   -I/home/swq/.config/nvim/test/cpp/inc  -g   -o CMakeFiles/app.dir/test.cpp.o -c /home/swq/.config/nvim/test/cpp/test.cpp",
+  "file": "/home/swq/.config/nvim/test/cpp/test.cpp"
+}
+]
