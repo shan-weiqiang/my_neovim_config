@@ -8,7 +8,7 @@ void f1() {
   double b = 8;
   double c = calculate_root(b);
   c = caculate_abs(c);
-  cout << b + c << std::endl;
+  std::cout << b + c << std::endl;
   cout << "test\n" << std::endl;
 }
 void f2() { f1(); }
