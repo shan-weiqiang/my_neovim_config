@@ -67,4 +67,14 @@ vim.cmd([[
   highlight GitSignsDelete guibg=NONE
   highlight GitSignsChange guibg=NONE
   highlight Directory guifg=NONE
+  highlight @number guifg=#B5CEA8
+  highlight NvimTreeNormal guibg=black
   ]])
+-- change tree sitter constructor color the same as Function
+vim.api.nvim_set_hl(0, "@constructor", { link = "Function" })
+-- change the operator such as new in c++ to the same color as if
+vim.api.nvim_set_hl(0, "@keyword.operator", {link = "Conditional"})
+-- change builtin type to identifier for cpp type, like vscode
+vim.api.nvim_set_hl(0, "@type.builtin.cpp", {link = "Keyword"})
+-- change cpp namespace name to color like type
+vim.api.nvim_set_hl(0, "@namespace", {link = "Type"})
