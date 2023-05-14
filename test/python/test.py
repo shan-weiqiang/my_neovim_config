@@ -1,5 +1,7 @@
 from somem import p
 
+def p(var):
+    print(var)
 SOME_CONST = "HELLOWORLD"
 class myclass:
     def __init__(self) -> None:

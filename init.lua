@@ -53,7 +53,7 @@ require 'bufferline-setup'
 
 vim.cmd[[colorscheme kanagawa]]
 
--- set back ground color
+-- set colors
 vim.cmd([[
   set background=dark
   highlight Normal ctermbg=black guibg=#1F1F1F
@@ -69,6 +69,10 @@ vim.cmd([[
   highlight Directory guifg=NONE
   highlight @number guifg=#B5CEA8
   highlight NvimTreeNormal guibg=black
+  highlight NvimTreeFolderIcon guifg=white
+  highlight fugitiveStagedModifier guifg=green
+  highlight fugitiveUnstagedModifier guifg=red
+  highlight fugitiveUntrackedModifier guifg=yellow
   ]])
 -- change tree sitter constructor color the same as Function
 vim.api.nvim_set_hl(0, "@constructor", { link = "Function" })
