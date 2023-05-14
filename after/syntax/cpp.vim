@@ -16,3 +16,4 @@ highlight DiagnosticHint guifg=#4EC9B0
 highlight @function.builtin ctermfg=222 guifg=#DCDCAA
 highlight Special guifg=#9CDCFE
 highlight StorageClass guifg=#569CD6
+highlight @type.qualifier guifg=#569CD6

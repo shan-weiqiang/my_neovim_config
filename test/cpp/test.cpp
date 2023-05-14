@@ -19,7 +19,7 @@ void myfunc() { f4(); }
 } // namespace mynamespace
 
 class Myclass {
-
+  const std::string name = "Tome";
   static double d;
 };
 
