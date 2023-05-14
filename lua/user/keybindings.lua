@@ -72,8 +72,8 @@ map("n", "<leader>q", ":q<CR>", opt)
 -- outline
 keymap("n", "<leader>o", ":SymbolsOutline<cr>", opts)
 
--- formatt: this can only be used for cpp, for python, use Neoformat
-keymap("n", "<A-f>", "<cmd>lua vim.lsp.buf.format{async = true}<cr>", opts)
+-- format: Neoformat
+keymap("n", "<A-f>", ":Neoformat<cr>", opts)
 
 -- debugging
 keymap("n", "<F5>", ":lua require'dap'.continue()<CR>", opts)
