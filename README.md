@@ -1,4 +1,4 @@
-Neovim configuration fo neovim in macbook/wsl2- conflicts here
+Neovim configuration fo neovim in macbook/wsl2
 [TOC]
 # Preparations
 
