@@ -14,3 +14,6 @@ highlight Statement guifg=#C586C0
 highlight Constant guifg=#4FC1FF
 highlight DiagnosticHint guifg=#4EC9B0
 highlight @function.builtin ctermfg=222 guifg=#DCDCAA
+highlight @variable.builtin guifg=#9CDCFE
+highlight @constant.builtin guifg=#569CD6
+highlight @operator guifg=#CCCCCC
