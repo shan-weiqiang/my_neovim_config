@@ -1,0 +1,16 @@
+{
+  "_class": "SOME_CLASS",
+  "_name": "Tom",
+  "age": 30,
+  "hobby": [
+    "basketball",
+    "football"
+  ],
+  "nested": [
+    {
+      "innder": {
+        "hello": "nihao"
+      }
+    }
+  ]
+}

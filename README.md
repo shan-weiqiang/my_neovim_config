@@ -11,6 +11,8 @@ The first step is to install `packer-nvim`
     > sudo apt install ripgrep
 - Install `python3-autopep8` for `Neoformat` to format Python code
 - Install `clang-format` for `Neoformat` to format C++ code
+- Install `jq` for `Neoformat` to format json file
+    > sudo apt install jq
 - Clone this repo into `~/.config`, change the folder name to `nvim`
 - Start nvim, run `PackerSync`
 
