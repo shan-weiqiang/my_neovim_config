@@ -25,11 +25,13 @@ class otherclass:
 
 if __name__ == '__main__':
     """Shan Weiqiang:
-    some unformatted text that need to be formatted..."""
+    some unformatted text that need to be formatted...
+    Neovim is hightly customizable
+    and i like it
+    """
 
-    print('hello, neovim is great')
+    print('hello, neovim is great and efficient')
 
     print("{} is used to test whetehr the autopep8 formatter is woring or not". format('format'))
     myinstance = otherclass()
     myinstance.some_function()
-    p('hello')

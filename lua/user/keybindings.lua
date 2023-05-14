@@ -30,6 +30,7 @@ map("n", "<leader>gs",":Git<CR>", opt )
 map("n", "<leader>cm", ":G commit<CR>", opt)
 map("n", "<leader>push", ":G push<CR>", opt)
 map("n", "<leader>pull", ":G pull<CR>", opt)
+map("n", "<leader>log", ":G log --graph<CR>", opt)
 
 -- nvimtree, space + e = open & close nvim tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opt)

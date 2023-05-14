@@ -67,6 +67,10 @@ return require('packer').startup(function(use)
 		
 	-- git
 	use "tpope/vim-fugitive"
+	use 'rbong/vim-flog'
+	use 'airblade/vim-gitgutter'
+	-- multi launguage syntax 
 	use 'sheerun/vim-polyglot'
+	-- rainbow parenthensis
 	use 'HiPhish/nvim-ts-rainbow2'
 end)
