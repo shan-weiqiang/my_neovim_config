@@ -54,7 +54,8 @@ return require('packer').startup(function(use)
 
 
 	-- gitsigns
-	use {'lewis6991/gitsigns.nvim'}
+	-- currently disable gitsings since we use gitgutter instead
+	-- use {'lewis6991/gitsigns.nvim'}
 
 	-- toggleterm
 	use { "akinsho/toggleterm.nvim", tag = '*' }

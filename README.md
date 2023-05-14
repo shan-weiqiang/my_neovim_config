@@ -18,12 +18,12 @@ The first step is to install `packer-nvim`
 - Default key mappings, the leader key is space
 	- ctrl+]: go to definition/in nvim tree, enter folder
 	- ctrl+o: go back to before cursor
-    - ctrl+u/n: nivagate between tab
-    - ctrl+h/l: navigate between window
-    - ctrl+j/k: scroll per 5 lines instead of 1 line
+    - ctrl+y/n: move cursor 5 lines 
+    - ctrl+h/l: navigate between window horizontally
+    - ctrl+j/k: navigate between window vertically
     - ctrl+\: toggle terminal
     - ctr+u/i:adjust window vertically
-    - ctrl+o/p: adjust window horizontally
+    - ctrl+p/[: adjust window horizontally
     - leader+e: open file explorer
     - leader+f: open find file
     - leader+g: open live grep
@@ -31,6 +31,10 @@ The first step is to install `packer-nvim`
     - leader+dt: open Git difftool
     - leader+gs: open Git
     - leader+df: open Gitvsplit
+    - leader+cm: Git commit
+    - leader+push: Git push
+    - leader+pull: Git pull
+    - leader+log: Git log 
     - others see `keybindings.lua`
 
 # Environment
@@ -38,7 +42,8 @@ The first step is to install `packer-nvim`
 ## Windows WSL2
 
 - Terminal: Windows Terminal
-    - Font: IosevkaNerdFontMono
+    - Font: JetBrainsMonoNL Nerd Font. Do not use Nerd Font Mono version, the icon will be too small
+        - Nerd Font Mono is not the same as Mono, Nerd Font Mono means icon has the same width as character
     - Color Schemes: One Half Dark
     - Mode: Focus Mode
 
