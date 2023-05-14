@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dds>
+    <profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles" >
+        <data_reader profile_name="datareader_profile">
+            <historyMemoryPolicy>PREALLOCATED</historyMemoryPolicy>
+        </data_reader>
+    </profiles>
+</dds>
