@@ -78,3 +78,5 @@ vim.api.nvim_set_hl(0, "@keyword.operator", {link = "Conditional"})
 vim.api.nvim_set_hl(0, "@type.builtin.cpp", {link = "Keyword"})
 -- change cpp namespace name to color like type
 vim.api.nvim_set_hl(0, "@namespace", {link = "Type"})
+-- change unncecssary syntax
+vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", {link = "Ignore"})
