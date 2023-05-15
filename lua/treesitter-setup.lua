@@ -39,7 +39,6 @@ require 'nvim-treesitter.configs'.setup {
                'TSRainbowOrange',
                'TSRainbowBlue',
                'TSRainbowGreen',
-               'TSRainbowRed',
             }
   },
 	 playground = {
