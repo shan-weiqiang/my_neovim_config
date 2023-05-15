@@ -61,3 +61,8 @@ require 'nvim-treesitter.configs'.setup {
     },
   }
 }
+
+local parsers = require "nvim-treesitter.parsers"
+
+local parser_config = parsers.get_parser_configs()
+parser_config.xjson.filetype_to_parsername = "json"
