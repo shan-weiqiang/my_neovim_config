@@ -85,4 +85,6 @@ vim.api.nvim_set_hl(0, "@namespace", {link = "Type"})
 -- change unncecssary syntax
 vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", {link = "Ignore"})
 -- set .xjon file to use json highlight
-vim.treesitter.language.register('json', 'xjson')
+vim.cmd([[
+  au! BufNewFile,BufRead *.xjson setf json
+  ]])
