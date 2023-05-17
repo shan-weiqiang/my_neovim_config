@@ -1,4 +1,4 @@
-require('lualine').setup(
+require('lualine').setup{
  sections = {
   lualine_c = {
     {
@@ -22,4 +22,4 @@ require('lualine').setup(
     }
   }
 }
-)
+}
