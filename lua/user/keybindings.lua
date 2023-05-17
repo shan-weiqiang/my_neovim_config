@@ -18,10 +18,10 @@ function map(mode, lhs, rhs, opts)
 end
 
 -- resize window
-map("n", "<C-p>", ":vertical res +5<CR>", opt)
-map("n", "<C-[>", ":vertical res -5<CR>", opt)
-map("n", "<C-n>", ":res +5<CR>", opt)
-map("n", "<C-y>", ":res -5<CR>", opt)
+map("n", "<A-h>", ":vertical res +5<CR>", opt)
+map("n", "<A-l>", ":vertical res -5<CR>", opt)
+map("n", "<A-j>", ":res +5<CR>", opt)
+map("n", "<A-k>", ":res -5<CR>", opt)
 
 -- Git
 map("n", "<leader>dt",":G difftool", opt )
@@ -54,8 +54,8 @@ map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-k>", "<C-w>k", opt)
 
 -- ctrl+j/k to move 5 lines up and down, for quick scrolling
-map("n", "<C-i>", ":+5<CR>", opt)
-map("n", "<C-u>", ":-5<CR>", opt)
+map("n", "<C-n>", ":+5<CR>", opt)
+map("n", "<C-y>", ":-5<CR>", opt)
 
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
