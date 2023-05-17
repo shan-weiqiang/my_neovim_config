@@ -54,8 +54,8 @@ map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-k>", "<C-w>k", opt)
 
 -- ctrl+j/k to move 5 lines up and down, for quick scrolling
-map("n", "<C-u>", ":+5<CR>", opt)
-map("n", "<C-m>", ":-5<CR>", opt)
+map("n", "<C-i>", ":+5<CR>", opt)
+map("n", "<C-u>", ":-5<CR>", opt)
 
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
