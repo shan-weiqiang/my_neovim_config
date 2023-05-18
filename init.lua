@@ -50,6 +50,7 @@ require 'gitsigns-setup'
 require 'lualine-setup'
 require 'symbols-outline-setup'
 require 'bufferline-setup'
+require 'nvim-ufo'
 
 vim.cmd[[colorscheme kanagawa]]
 
