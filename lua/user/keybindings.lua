@@ -24,7 +24,7 @@ map("n", "<A-j>", ":res +5<CR>", opt)
 map("n", "<A-k>", ":res -5<CR>", opt)
 
 -- Git
-map("n", "<leader>dt",":G difftool", opt )
+map("n", "<leader>dt",":G difftool --name-status", opt )
 map("n", "<leader>df",":Gvdiffsplit", opt )
 map("n", "<leader>gs",":Git<CR>", opt )
 map("n", "<leader>cm", ":G commit<CR>", opt)
