@@ -74,5 +74,6 @@ return require('packer').startup(function(use)
 	use 'sheerun/vim-polyglot'
 	-- rainbow parenthensis
 	use 'HiPhish/nvim-ts-rainbow2'
-	use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+	-- fold and unfold
+	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 end)
