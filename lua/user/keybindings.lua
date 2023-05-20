@@ -72,7 +72,7 @@ map("n", "<leader>wq", ":wq<CR>", opt)
 map("n", "<leader>q", ":q<CR>", opt)
 
 -- outline
-keymap("n", "<leader>o", ":SymbolsOutline<cr>", opts)
+-- keymap("n", "<leader>o", ":SymbolsOutline<cr>", opts)
 
 -- format: Neoformat
 keymap("n", "<A-f>", ":Neoformat<cr>", opts)
@@ -87,3 +87,5 @@ keymap("n", "<leader>B", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpo
 keymap("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", opts)
 keymap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", opts)
 
+-- tagbar
+map("n", "<F8>",  ":TagbarToggle<CR>",opt)

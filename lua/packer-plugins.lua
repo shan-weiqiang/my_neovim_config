@@ -49,8 +49,8 @@ return require('packer').startup(function(use)
 	-- formatter
 	use {"sbdchd/neoformat"}
 
-	-- symbols-outline view
-	use {'simrat39/symbols-outline.nvim'}
+	-- symbols-outline view, disabled, using tagbar instead
+	-- use {'simrat39/symbols-outline.nvim'}
 
 
 	-- gitsigns
@@ -76,4 +76,6 @@ return require('packer').startup(function(use)
 	use 'HiPhish/nvim-ts-rainbow2'
 	-- fold and unfold
 	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+	-- tagbar
+	use 'preservim/tagbar'
 end)

@@ -13,6 +13,7 @@ The first step is to install `packer-nvim`
 - Install `clang-format` for `Neoformat` to format C++ code
 - Install `jq` for `Neoformat` to format json file
     > sudo apt install jq
+- Install `uctags` at https://github.com/universal-ctags/ctags, for tagbar to work
 - Clone this repo into `~/.config`, change the folder name to `nvim`
 - Start nvim, run `PackerSync`
 
