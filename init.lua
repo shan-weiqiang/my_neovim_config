@@ -74,6 +74,7 @@ vim.cmd([[
   highlight fugitiveStagedModifier guifg=green
   highlight fugitiveUnstagedModifier guifg=red
   highlight fugitiveUntrackedModifier guifg=yellow
+  highlight FoldColumn guibg=#1F1F1F 
   ]])
 -- change tree sitter constructor color the same as Function
 vim.api.nvim_set_hl(0, "@constructor", { link = "Function" })
