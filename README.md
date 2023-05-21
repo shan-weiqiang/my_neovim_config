@@ -1,5 +1,4 @@
 Neovim configuration fo neovim in macbook/wsl2
-[TOC]
 # Preparations
 
 - Install packer-nvim
@@ -49,6 +48,11 @@ The first step is to install `packer-nvim`
         - Nerd Font Mono is not the same as Mono, Nerd Font Mono means icon has the same width as character
     - Color Schemes: One Half Dark
     - Mode: Focus Mode
+## MacBook
+
+- Terminal: iTerm2
+    - Font: JetBrainsMono Nerd Font
+    - Need to change left option key to Esc+ to use the Alt key bindings
 
 ## Tips
 
