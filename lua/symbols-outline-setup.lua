@@ -1,1 +1,2 @@
-require('symbols-outline').setup()
+-- use tag bar instead
+-- require('symbols-outline').setup()
