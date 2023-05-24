@@ -25,14 +25,14 @@ map("n", "<A-k>", ":res -5<CR>", opt)
 
 -- Git
 map("n", "<leader>dt",":G difftool --name-status", opt )
-map("n", "<leader>df",":Gvdiffsplit", opt )
-map("n", "<leader>gs",":Git<CR>", opt )
-map("n", "<leader>cm", ":G commit<CR>", opt)
-map("n", "<leader>push", ":G push<CR>", opt)
-map("n", "<leader>pull", ":G pull<CR>", opt)
-map("n", "<leader>log", ":G log --graph --decorate --all<CR>", opt)
+map("n", "<leader>dd",":Gvdiffsplit", opt )
+map("n", "<leader>ds",":Git<CR>", opt )
+map("n", "<leader>dm", ":G commit<CR>", opt)
+map("n", "<leader>dp", ":G push<CR>", opt)
+map("n", "<leader>dl", ":G pull<CR>", opt)
+map("n", "<leader>do", ":G log --graph --decorate --all<CR>", opt)
 -- used for seeing commit changes, this command can fold files
-map("n", "<leader>fs", ":setlocal foldmethod=syntax<CR>", opt)
+map("n", "<leader>df", ":setlocal foldmethod=syntax<CR>", opt)
 
 -- nvimtree, space + e = open & close nvim tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opt)
