@@ -51,6 +51,7 @@ require 'lualine-setup'
 require 'symbols-outline-setup'
 require 'bufferline-setup'
 require 'nvim-ufo'
+require("telescope").load_extension("persisted")
 
 vim.cmd[[colorscheme kanagawa]]
 

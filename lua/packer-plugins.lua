@@ -78,4 +78,13 @@ return require('packer').startup(function(use)
 	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 	-- tagbar
 	use 'preservim/tagbar'
+
+	-- session management
+	-- Lua
+	use({
+		"olimorris/persisted.nvim",
+		config = function()
+			require("persisted").setup()
+		end,
+	})
 end)
