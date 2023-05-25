@@ -80,7 +80,16 @@ return require('packer').startup(function(use)
 	use 'preservim/tagbar'
 
 	-- session management
-	use({'glepnir/dbsession.nvim', cmd = { 'SessionSave', 'SessionDelete', 'SessionLoad'},
-    config = function() require('dbsession').setup({}) end
-})
+-- 	use({'glepnir/dbsession.nvim', cmd = { 'SessionSave', 'SessionDelete', 'SessionLoad'},
+--     config = function() require('dbsession').setup({}) end
+-- })
+		use {
+  'rmagatti/auto-session',
+  config = function()
+    require("auto-session").setup {
+      log_level = "error",
+      auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+    }
+  end
+}
 end)
