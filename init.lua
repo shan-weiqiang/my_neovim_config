@@ -90,3 +90,9 @@ vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", {link = "Ignore"})
 vim.cmd([[
   au! BufNewFile,BufRead *.xjson setf json
   ]])
+-- avoid session change when there are unsaved changes
+-- Prevent session switch if there are unsaved changes
+vim.cmd [[
+    au SessionLoadPost * if &modified | lua error("Unsaved changes exist. Aborting session switch.") | endif
+]]
+
