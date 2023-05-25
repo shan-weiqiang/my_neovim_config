@@ -27,7 +27,7 @@ map("n", "<A-k>", ":res -5<CR>", opt)
 map("n", "<leader>dt",":G difftool --name-status", opt )
 map("n", "<leader>dd",":Gvdiffsplit", opt )
 map("n", "<leader>ds",":Git<CR>", opt )
-map("n", "<leader>dm", ":G commit<CR>", opt)
+map("n", "<leader>dc", ":G commit<CR>", opt)
 map("n", "<leader>dp", ":G push<CR>", opt)
 map("n", "<leader>dl", ":G pull<CR>", opt)
 map("n", "<leader>do", ":G log --graph --decorate --all<CR>", opt)
@@ -61,6 +61,9 @@ map("n", "<C-y>", ":-5<CR>", opt)
 
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
+
+-- session
+map("n", "<leader>p", ":Telescope persisted<CR>", opt)
 
 -- sapce + w: save
 map("n", "<leader>w", ":w<CR>", opt)
