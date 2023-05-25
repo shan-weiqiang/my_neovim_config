@@ -80,4 +80,7 @@ return require('packer').startup(function(use)
 	use 'preservim/tagbar'
 
 	-- session management
+	use({'glepnir/dbsession.nvim', cmd = { 'SessionSave', 'SessionDelete', 'SessionLoad'},
+    config = function() require('dbsession').setup({}) end
+})
 end)
