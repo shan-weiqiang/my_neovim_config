@@ -1,2 +1,0 @@
--- use tag bar instead
--- require('symbols-outline').setup()

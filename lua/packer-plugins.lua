@@ -49,13 +49,6 @@ return require('packer').startup(function(use)
 	-- formatter
 	use {"sbdchd/neoformat"}
 
-	-- symbols-outline view, disabled, using tagbar instead
-	-- use {'simrat39/symbols-outline.nvim'}
-
-
-	-- gitsigns
-	-- currently disable gitsings since we use gitgutter instead
-	-- use {'lewis6991/gitsigns.nvim'}
 
 	-- toggleterm
 	use { "akinsho/toggleterm.nvim", tag = '*' }
@@ -74,8 +67,7 @@ return require('packer').startup(function(use)
 	use 'sheerun/vim-polyglot'
 	-- rainbow parenthensis
 	use 'HiPhish/nvim-ts-rainbow2'
-	-- fold and unfold
-	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
 	-- tagbar
 	use 'preservim/tagbar'
 

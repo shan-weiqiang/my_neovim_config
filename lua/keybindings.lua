@@ -75,8 +75,6 @@ map("n", "<leader>wq", ":wq<CR>", opt)
 -- space + q: quit
 map("n", "<leader>q", ":q<CR>", opt)
 
--- outline
--- keymap("n", "<leader>o", ":SymbolsOutline<cr>", opts)
 
 -- format: Neoformat
 keymap("n", "<A-f>", ":Neoformat<cr>", opts)

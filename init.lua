@@ -5,6 +5,7 @@ vim.o.smartindent = true
 vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.timeoutlen = 1000
+vim.o.foldcolumn = '1'
 -- use zsh for terminals
 vim.opt.shell = 'zsh'
 vim.opt.termguicolors = true
@@ -30,7 +31,7 @@ require('Comment').setup()
 require('nvim-tree-setup')
 
 -- keybindings
-require('user.keybindings')
+require('keybindings')
 
 
 -- [[use packer.nvim to manage all plugins,https://github.com/wbthomason/packer.nvim
@@ -53,11 +54,8 @@ require('toggleterm-setup')
 require('user.dap')
 require 'autopairs-setup'
 require 'blankline-setup'
-require 'gitsigns-setup'
 require 'lualine-setup'
-require 'symbols-outline-setup'
 require 'bufferline-setup'
-require 'nvim-ufo'
 
 vim.cmd[[colorscheme kanagawa]]
 
