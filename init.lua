@@ -6,7 +6,7 @@ vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.timeoutlen = 1000
 -- use zsh for terminals
-vim.opt.shell = 'zsh
+vim.opt.shell = 'zsh'
 vim.opt.termguicolors = true
 vim.wo.relativenumber=true
 -- show parenthensis match
