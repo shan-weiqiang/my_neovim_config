@@ -45,8 +45,11 @@ map('n', '<leader>e', ':NvimTreeToggle<CR>', opt)
 -- for live_grep to work, sudo apt install ripgrep
 map("n", "<leader>f", ":Telescope find_files<CR>", opt)
 map("n", "<leader>g", ":Telescope live_grep<CR>", opt)
-map("n", "<leader>s", ":Telescope lsp_document_symbols<CR>", opt)
 map("n", "<leader>r", ":Telescope oldfiles<CR>", opt)
+
+-- session switch
+map("n", "<leader>s", ":SessionLoad ", opt)
+
 
 
 -- ctrl+h/j to jump between windows instead of ctrl+w
