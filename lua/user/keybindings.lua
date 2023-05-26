@@ -66,9 +66,6 @@ map("n", "<C-y>", ":-5<CR>", opt)
 -- space + c: open command input
 map("n", "<leader>c", ":", opt)
 
--- session
-map("n", "<leader>p", ":Telescope persisted<CR>", opt)
-
 -- sapce + w: save
 map("n", "<leader>w", ":w<CR>", opt)
 
