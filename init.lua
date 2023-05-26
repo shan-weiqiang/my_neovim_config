@@ -19,6 +19,9 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 -- autosave when leaving buffer or lose focus
 vim.cmd[[autocmd BufLeave,FocusLost * silent! wall]]
 
+-- session content
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 
 require('Comment').setup()
 
