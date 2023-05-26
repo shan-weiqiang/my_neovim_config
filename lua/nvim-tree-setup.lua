@@ -7,6 +7,7 @@ vim.opt.termguicolors = true
 
 -- empty setup using defaults
 require("nvim-tree").setup({
+	sync_root_with_cwd = true,
 	view={
 		width=50,
 	}
