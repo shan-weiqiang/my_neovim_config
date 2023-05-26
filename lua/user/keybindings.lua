@@ -48,7 +48,8 @@ map("n", "<leader>g", ":Telescope live_grep<CR>", opt)
 map("n", "<leader>r", ":Telescope oldfiles<CR>", opt)
 
 -- session switch
-map("n", "<leader>s", ":SessionLoad ", opt)
+map("n", "<leader>sl", ":SessionLoad ", opt)
+map("n", "<leader>ss", ":SessionSave<CR>", opt)
 
 
 
