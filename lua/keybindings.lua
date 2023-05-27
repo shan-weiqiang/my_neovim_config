@@ -17,6 +17,11 @@ function map(mode, lhs, rhs, opts)
 	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- open split window
+map("n", "<leader>v", ":vsplit<CR>", opt)
+map("n", "<leader>-", ":split<CR>", opt)
+
+
 -- resize window
 map("n", "<A-h>", ":vertical res +5<CR>", opt)
 map("n", "<A-l>", ":vertical res -5<CR>", opt)
