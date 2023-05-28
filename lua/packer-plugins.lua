@@ -11,10 +11,14 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
 	use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
 	use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-	use 'L3MON4D3/LuaSnip' -- Snippets plugin
-
+  use({
+    	"L3MON4D3/LuaSnip",
+    	-- follow latest release.
+	   tag = "v1.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	   -- install jsregexp (optional!:).
+	   run = "make install_jsregexp"
+})
 	-- color scheme
-	use 'folke/tokyonight.nvim'
 	use "rebelot/kanagawa.nvim"
 
 
@@ -57,11 +61,12 @@ return require('packer').startup(function(use)
 	use "mfussenegger/nvim-dap"
 	use "mfussenegger/nvim-dap-python"
 	use "rcarriga/nvim-dap-ui"
+
+	-- markdown preview
 	use{"iamcco/markdown-preview.nvim",	run = function() vim.fn["mkdp#util#install"]() end,}
 		
 	-- git
 	use "tpope/vim-fugitive"
-	use 'rbong/vim-flog'
 	use 'airblade/vim-gitgutter'
 	-- multi launguage syntax 
 	use 'sheerun/vim-polyglot'
@@ -75,13 +80,4 @@ return require('packer').startup(function(use)
 	use({'glepnir/dbsession.nvim', cmd = { 'SessionSave', 'SessionDelete', 'SessionLoad'},
     config = function() require('dbsession').setup({}) end
 })
--- 	use {
--- 	  'rmagatti/auto-session',
--- 	  config = function()
--- 	    require("auto-session").setup {
--- 	      log_level = "error",
--- 	      auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
--- 	    }
--- 	  end
--- 	}
 end)
