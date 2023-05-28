@@ -24,19 +24,19 @@ The first step is to install `packer-nvim`
     - ctrl+h/l: navigate between window horizontally
     - ctrl+j/k: navigate between window vertically
     - ctrl+\: toggle terminal
-    - ctr+u/i:adjust window vertically
-    - ctrl+p/[: adjust window horizontally
+    - alt+j/k:adjust window vertically
+    - alt+h/l: adjust window horizontally
     - leader+e: open file explorer
     - leader+f: open find file
     - leader+g: open live grep
     - leader+c: opend command line input
     - leader+dt: open Git difftool
-    - leader+gs: open Git
-    - leader+df: open Gitvsplit
-    - leader+cm: Git commit
-    - leader+push: Git push
-    - leader+pull: Git pull
-    - leader+log: Git log 
+    - leader+ds: open Git
+    - leader+dd: open Gitvsplit
+    - leader+dc: Git commit
+    - leader+dp: Git push
+    - leader+dl: Git pull
+    - leader+do: Git log 
     - others see `keybindings.lua`
 
 # Environment
