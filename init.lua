@@ -48,7 +48,7 @@ require('user.lsp')
 require('treesitter-setup')
 
 -- toggleterm
-require('toggleterm-setup')
+-- require('toggleterm-setup')
 
 -- debugging
 require('user.dap')
