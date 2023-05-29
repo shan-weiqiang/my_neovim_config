@@ -25,7 +25,7 @@ map("n", "<leader>-", ":split<CR>", opt)
 map("n", "<C-t>", ":bo split +term<CR>", opt)
 
 -- remap Esc to exit terminal mode
-map("n", "<Esc>", "<C-\><C-n>", opt)
+map("n", "<Esc>", "<C-\\><C-n>", opt)
 
 -- resize window
 map("n", "<A-h>", ":vertical res +5<CR>", opt)
