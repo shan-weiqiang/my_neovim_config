@@ -21,6 +21,8 @@ end
 map("n", "<leader>v", ":vsplit<CR>", opt)
 map("n", "<leader>-", ":split<CR>", opt)
 
+-- open terminal at the bottom
+map("n", "<C-`>", ":bo split +term<CR>", opt)
 
 -- resize window
 map("n", "<A-h>", ":vertical res +5<CR>", opt)
