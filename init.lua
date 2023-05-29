@@ -16,6 +16,10 @@ vim.diagnostic.config({
   virtual_text = false
 })
 
+-- always split below current window
+vim.api.nvim_set_option('splitbelow', true)
+
+
 -- Show line diagnostics automatically in hover window
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
