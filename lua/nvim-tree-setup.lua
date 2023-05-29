@@ -10,6 +10,9 @@ require("nvim-tree").setup({
 	sync_root_with_cwd = true,
 	view={
 		width=50,
-	}
+	},
+		update_focused_file = {
+  enable = true,
+}
 	}
 )
