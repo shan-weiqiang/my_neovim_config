@@ -27,7 +27,7 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 vim.cmd[[autocmd BufLeave,FocusLost * silent! wall]]
 
 -- session content
-vim.o.sessionoptions="buffers,curdir,folds,help,tabpages,winsize,winpos,localoptions,terminal"
+vim.o.sessionoptions="buffers,curdir,folds,help,tabpages,winsize,winpos,localoptions"
 
 
 require('Comment').setup()
