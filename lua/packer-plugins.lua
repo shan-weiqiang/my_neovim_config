@@ -74,7 +74,7 @@ return require('packer').startup(function(use)
 	use 'HiPhish/nvim-ts-rainbow2'
 
 	-- tagbar
-	use 'preservim/tagbar'
+-- 	use 'preservim/tagbar'
 
 	-- session management
 	use({'glepnir/dbsession.nvim', cmd = { 'SessionSave', 'SessionDelete', 'SessionLoad'},
