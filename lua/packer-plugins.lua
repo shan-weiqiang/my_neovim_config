@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
 })
 	-- color scheme
 	use "rebelot/kanagawa.nvim"
+	use { "catppuccin/nvim", as = "catppuccin" }
 
 
 	-- comment

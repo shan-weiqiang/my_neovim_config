@@ -66,13 +66,13 @@ vim.cmd[[colorscheme kanagawa]]
 -- set colors
 vim.cmd([[
   set background=dark
-  highlight Normal ctermbg=black guibg=#1F1F1F
-  highlight LineNr guibg=#1F1F1F
-  highlight SignColumn guibg=#1F1F1F 
-  highlight DiagnosticSignError guibg=#1F1F1F
-  highlight DiagnosticSignWarn guibg=#1F1F1F
-  highlight DiagnosticSignHint guibg=#1F1F1F
-  highlight DiagnosticSignInfo guibg=#1F1F1F
+  highlight Normal ctermbg=black guibg=black
+  highlight LineNr guibg=black
+  highlight SignColumn guibg=black 
+  highlight DiagnosticSignError guibg=black
+  highlight DiagnosticSignWarn guibg=black
+  highlight DiagnosticSignHint guibg=black
+  highlight DiagnosticSignInfo guibg=black
   highlight GitSignsAdd guibg=NONE
   highlight GitSignsDelete guibg=NONE
   highlight GitSignsChange guibg=NONE
@@ -83,7 +83,7 @@ vim.cmd([[
   highlight fugitiveStagedModifier guifg=green
   highlight fugitiveUnstagedModifier guifg=red
   highlight fugitiveUntrackedModifier guifg=yellow
-  highlight FoldColumn guibg=#1F1F1F 
+  highlight FoldColumn guibg=black 
   ]])
 -- change tree sitter constructor color the same as Function
 vim.api.nvim_set_hl(0, "@constructor", { link = "Function" })
