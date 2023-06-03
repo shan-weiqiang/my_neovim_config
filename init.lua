@@ -10,6 +10,7 @@ vim.o.foldcolumn = '1'
 vim.opt.shell = 'zsh'
 vim.opt.termguicolors = true
 vim.wo.relativenumber=true
+vim.wo.wrap=false
 -- show parenthensis match
 vim.opt.showmatch = true
 vim.diagnostic.config({
