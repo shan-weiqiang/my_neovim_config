@@ -1,11 +1,11 @@
-local dap = require('dap')
-local dap = require('dap')
+local dap = require("dap")
+local dap = require("dap")
 dap.adapters.cppdbg = {
-	id = 'cppdbg',
-	type = 'executable',
+	id = "cppdbg",
+	type = "executable",
 	-- need to install vscode cpptools for cpp to work
 	-- https://github.com/mfussenegger/nvim-dap/wiki/C-C---Rust-(gdb-via--vscode-cpptools)
-	command = '/home/osboxes/Downloads/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+	command = "/home/osboxes/Downloads/cpptools/extension/debugAdapters/bin/OpenDebugAD7",
 }
 dap.configurations.cpp = {
 	{
@@ -13,21 +13,21 @@ dap.configurations.cpp = {
 		type = "cppdbg",
 		request = "launch",
 		program = function()
-			return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
 		end,
-		cwd = '${workspaceFolder}',
+		cwd = "${workspaceFolder}",
 		stopAtEntry = true,
 	},
 	{
-		name = 'Attach to gdbserver :1234',
-		type = 'cppdbg',
-		request = 'launch',
-		MIMode = 'gdb',
-		miDebuggerServerAddress = 'localhost:1234',
-		miDebuggerPath = '/usr/bin/gdb',
-		cwd = '${workspaceFolder}',
+		name = "Attach to gdbserver :1234",
+		type = "cppdbg",
+		request = "launch",
+		MIMode = "gdb",
+		miDebuggerServerAddress = "localhost:1234",
+		miDebuggerPath = "/usr/bin/gdb",
+		cwd = "${workspaceFolder}",
 		program = function()
-			return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
 		end,
 	},
 }

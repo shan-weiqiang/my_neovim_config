@@ -1,4 +1,4 @@
-M={}
+M = {}
 local function config_dapui()
 	local dap, dapui = require("dap"), require("dapui")
 	dap.listeners.after.event_initialized["dapui_config"] = function()
@@ -11,7 +11,6 @@ local function config_dapui()
 		dapui.close()
 	end
 end
-
 
 function M.setup()
 	config_dapui()

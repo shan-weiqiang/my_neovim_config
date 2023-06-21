@@ -1,4 +1,4 @@
-local status_ok, dapui = pcall(require, 'dapui')
+local status_ok, dapui = pcall(require, "dapui")
 if not status_ok then
 	vim.notify("dapui not found")
 	return
@@ -74,5 +74,5 @@ require("dapui").setup({
 	render = {
 		max_type_length = nil, -- Can be integer or nil.
 		max_value_lines = 100, -- Can be integer or nil.
-	}
+	},
 })

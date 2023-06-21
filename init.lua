@@ -5,64 +5,61 @@ vim.o.smartindent = true
 vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.timeoutlen = 1000
-vim.o.foldcolumn = '1'
+vim.o.foldcolumn = "1"
 -- use zsh for terminals
-vim.opt.shell = 'zsh'
+vim.opt.shell = "zsh"
 vim.opt.termguicolors = true
-vim.wo.relativenumber=true
-vim.wo.wrap=false
+vim.wo.relativenumber = true
+vim.wo.wrap = false
 -- show parenthensis match
 vim.opt.showmatch = true
 vim.diagnostic.config({
-  virtual_text = false
+	virtual_text = false,
 })
 
 -- always split below current window
-vim.api.nvim_set_option('splitbelow', true)
-
+vim.api.nvim_set_option("splitbelow", true)
 
 -- Show line diagnostics automatically in hover window
 vim.o.updatetime = 250
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])
 -- autosave when leaving buffer or lose focus
-vim.cmd[[autocmd BufLeave,FocusLost * silent! wall]]
+vim.cmd([[autocmd BufLeave,FocusLost * silent! wall]])
 
 -- session content
-vim.o.sessionoptions="buffers,curdir,folds,help,tabpages,winsize,winpos,localoptions"
+vim.o.sessionoptions = "buffers,curdir,folds,help,tabpages,winsize,winpos,localoptions"
 
+require("Comment").setup()
 
-require('Comment').setup()
-
-require('nvim-tree-setup')
+require("nvim-tree-setup")
 
 -- keybindings
-require('keybindings')
-
+require("keybindings")
 
 -- [[use packer.nvim to manage all plugins,https://github.com/wbthomason/packer.nvim
 -- all plugins are installed at default search path: ~/.local/share/nvim/site/pack/...
 -- use :h packages to find more information about neovim packages.
 -- packer.nvim must be first installed manully. Other plugins are installed automatically by packer.nvim
 -- following line is the initialization of packer.nvim, which automatically loads all other plugins.]]
-require('packer-plugins')
+require("packer-plugins")
 
 -- lsp-config
-require('user.lsp')
+require("user.lsp")
 
 -- treesitter
-require('treesitter-setup')
+require("treesitter-setup")
 
 -- toggleterm
 -- require('toggleterm-setup')
 
 -- debugging
-require('user.dap')
-require 'autopairs-setup'
-require 'blankline-setup'
-require 'lualine-setup'
-require 'bufferline-setup'
+require("user.dap")
+require("autopairs-setup")
+require("blankline-setup")
+require("lualine-setup")
+require("bufferline-setup")
 
-vim.cmd[[colorscheme kanagawa]]
+vim.cmd([[colorscheme kanagawa]])
 
 -- set colors
 vim.cmd([[
@@ -90,15 +87,14 @@ vim.cmd([[
 -- change tree sitter constructor color the same as Function
 vim.api.nvim_set_hl(0, "@constructor", { link = "Function" })
 -- change the operator such as new in c++ to the same color as if
-vim.api.nvim_set_hl(0, "@keyword.operator", {link = "Conditional"})
+vim.api.nvim_set_hl(0, "@keyword.operator", { link = "Conditional" })
 -- change builtin type to identifier for cpp type, like vscode
-vim.api.nvim_set_hl(0, "@type.builtin.cpp", {link = "Keyword"})
+vim.api.nvim_set_hl(0, "@type.builtin.cpp", { link = "Keyword" })
 -- change cpp namespace name to color like type
-vim.api.nvim_set_hl(0, "@namespace", {link = "Type"})
+vim.api.nvim_set_hl(0, "@namespace", { link = "Type" })
 -- change unncecssary syntax
-vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", {link = "Ignore"})
+vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { link = "Ignore" })
 -- set .xjon file to use json highlight
 vim.cmd([[
   au! BufNewFile,BufRead *.xjson setf json
   ]])
-

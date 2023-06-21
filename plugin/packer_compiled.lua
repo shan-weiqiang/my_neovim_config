@@ -113,6 +113,11 @@ _G.packer_plugins = {
     path = "/Users/shanweiqiang/.local/share/nvim/site/pack/packer/opt/dbsession.nvim",
     url = "https://github.com/glepnir/dbsession.nvim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/shanweiqiang/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/shanweiqiang/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
