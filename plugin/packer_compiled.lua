@@ -227,6 +227,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/shanweiqiang/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/Users/shanweiqiang/.local/share/nvim/site/pack/packer/start/vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
   }
 }
 
@@ -234,13 +239,6 @@ time([[Defining packer_plugins]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'SessionDelete', function(cmdargs)
-          require('packer.load')({'dbsession.nvim'}, { cmd = 'SessionDelete', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'dbsession.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('SessionDelete ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'SessionLoad', function(cmdargs)
           require('packer.load')({'dbsession.nvim'}, { cmd = 'SessionLoad', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -254,6 +252,13 @@ pcall(vim.api.nvim_create_user_command, 'SessionSave', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'dbsession.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('SessionSave ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'SessionDelete', function(cmdargs)
+          require('packer.load')({'dbsession.nvim'}, { cmd = 'SessionDelete', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'dbsession.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('SessionDelete ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

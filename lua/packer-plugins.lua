@@ -71,7 +71,7 @@ return require("packer").startup(function(use)
 	use("tpope/vim-fugitive")
 	use("airblade/vim-gitgutter")
 	-- multi launguage syntax
-	-- use 'sheerun/vim-polyglot'
+	use("sheerun/vim-polyglot")
 	-- rainbow parenthensis
 	use("HiPhish/nvim-ts-rainbow2")
 
