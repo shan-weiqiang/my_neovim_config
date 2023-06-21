@@ -76,8 +76,6 @@ vim.cmd([[
   highlight GitSignsChange guibg=NONE
   highlight Directory guifg=NONE
   highlight @number guifg=#B5CEA8
-  highlight NvimTreeNormal guibg=black
-  highlight NvimTreeFolderIcon guifg=white
   highlight fugitiveStagedModifier guifg=green
   highlight fugitiveUnstagedModifier guifg=red
   highlight fugitiveUntrackedModifier guifg=yellow

@@ -50,6 +50,7 @@ map("n", "<leader>e", ":NvimTreeToggle<CR>", opt)
 -- bufferline 左右切换
 -- map("n", "<C-y>", ":BufferLineCyclePrev<CR>", opt)
 -- map("n", "<C-n>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<A-c>", ":BufferLineGroupClose ungrouped<CR>", opt)
 
 -- telescope: space + f open find_files; space + g open live_grep
 -- for live_grep to work, sudo apt install ripgrep
