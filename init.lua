@@ -17,6 +17,9 @@ vim.diagnostic.config({
 	virtual_text = false,
 })
 
+-- Set clipboard+=unnamedplus, this will cause yank to system clipboard; need additional program to achieve, see :h clipboard
+vim.api.nvim_set_option("clipboard", "unnamedplus")
+
 -- always split below current window
 vim.api.nvim_set_option("splitbelow", true)
 
