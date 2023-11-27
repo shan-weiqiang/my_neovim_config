@@ -96,6 +96,8 @@ vim.api.nvim_set_hl(0, "@type.builtin.cpp", { link = "Keyword" })
 vim.api.nvim_set_hl(0, "@namespace", { link = "Type" })
 -- change unncecssary syntax
 vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { link = "Ignore" })
+-- make comment not italic
+vim.api.nvim_set_hl(0, 'Comment', { italic=false })
 -- set .xjon file to use json highlight
 vim.cmd([[
   au! BufNewFile,BufRead *.xjson setf json
